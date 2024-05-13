@@ -25,8 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body>
-        <Layout>{children}</Layout>
+      <head>
         <Script id='metrika-counter' strategy='afterInteractive'>
           {`(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
             m[i].l=1*new Date();
@@ -40,6 +39,9 @@ export default function RootLayout({
               accurateTrackBounce:true
             });`}
         </Script>
+      </head>
+      <body>
+        <Layout>{children}</Layout>
       </body>
     </html>
   )
