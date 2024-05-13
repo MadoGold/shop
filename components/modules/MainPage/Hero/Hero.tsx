@@ -5,9 +5,9 @@ import { Swiper as SwiperType } from 'swiper/types'
 import 'swiper/css'
 import 'swiper/css/effect-coverflow'
 import { useLang } from '@/hooks/useLang'
-import img1 from '@/public/img/black-t.png'
-import img2 from '@/public/img/orange-t.png'
-import img3 from '@/public/img/violet-t.png'
+import img1 from '@/public/img/t-1.png'
+import img2 from '@/public/img/t-2.png'
+import img3 from '@/public/img/t-3.png'
 import HeroSlide from './HeroSlide'
 import ProductSubtitle from '@/components/elements/ProductSubtitle/ProductSubtitle'
 import styles from '@/styles/main-page/index.module.scss'
@@ -82,6 +82,8 @@ const Hero = () => {
           >
             [ {translations[lang].main_page.hero_subtitle} ]
           </span>
+          <br />
+          <br />
           <span className={styles.hero__title__text}>
             {translations[lang].main_page.hero_title}
           </span>
